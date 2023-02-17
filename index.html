@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Ficha 3D&T</title>
+</head>
+
+<body>
+    <div class="center">
+        <h1 class="tituloficha">FICHA DE PERSONAGEM</h1>
+        <section class="nomepontos">
+            <label class="nomepontos__label" for="nome">Nome</label>
+            <input type="text" id="nome" autofocus required>
+            <input type="number" id="pontos" min="0">
+            <label class="nomepontos__label" for="pontos">Pontos</label>
+        </section>
+        <form class="ficha">
+            <section class="caracteristicas">
+                <h3 class="caracteristicas__titulo">Características</h3>
+                <div class="caracteristicas__div">
+                    <label class="caracteristicas__label" for="forca">FORÇA</label>
+                    <input type="number" class="caracteristicas__input" id="forca" min="0">
+                </div>
+                <div class="caracteristicas__div">
+                    <label class="caracteristicas__label" for="habilidade">HABILIDADE</label>
+                    <input type="number" class="caracteristicas__input" id="habilidade" min="0">
+                </div>
+                <div class="caracteristicas__div">
+                    <label class="caracteristicas__label" for="resistencia">RESISTÊNCIA</label>
+                    <input type="number" class="caracteristicas__input" id="resistencia" min="0">
+                </div>
+                <div class="caracteristicas__div">
+                    <label class="caracteristicas__label" for="armadura">ARMADURA</label>
+                    <input type="number" class="caracteristicas__input" id="armadura" min="0">
+                </div>
+                <div class="caracteristicas__div">
+                    <label class="caracteristicas__label" for="poderdefogo">PODER DE FOGO</label>
+                    <input type="number" class="caracteristicas__input" id="poderdefogo" min="0">
+                </div>
+                <div id="caracteristicas__pontosdevida">
+                    <label class="caracteristicas__label" for="pv">Pontos de Vida</label>
+                    <div id="caracteristicas__pontosdevida__input">
+                        <input type="number" class="caracteristicas__input" id="pontosdevida" min="0">
+                        <input type="number" class="caracteristicas__input" id="pontosdevidamaximos" min="0">
+                    </div>
+                </div>
+                <div id="caracteristicas__pontosdemagia">
+                    <label class="caracteristicas__label" for="pm">Pontos de Magia</label>
+                    <div id="caracteristicas__pontosdemagia__input">
+                        <input type="number" class="caracteristicas__input" id="pontosdemagia" min="0">
+                        <input type="number" class="caracteristicas__input" id="pontosdemagiamaximos" min="0">
+                    </div>
+                </div>
+                <div class="caracteristicas__div">
+                    <label class="caracteristicas__label" for="pe">Pontos de Experiência</label>
+                    <input type="number" class="caracteristicas__input" id="pontosdeexperiencia" min="0">
+                </div>
+            </section>
+            <section class="vantagens-desvantagens">
+                <h3 class="vantagens-desvantagens__titulo">Vantagens</h3>
+                <textarea name="vantagens" class="vantagens-desvantagens__campo"></textarea>
+                <h3 class="vantagens-desvantagens__titulo">Desvantagens</h3>
+                <textarea name="desvantagens" class="vantagens-desvantagens__campo"></textarea>
+                <h3 class="vantagens-desvantagens__titulo">Tipos de Dano</h3>
+                <textarea name="tiposdedano" class="vantagens-desvantagens__campo"
+                    id="vantagens-desvantagens__dano"></textarea>
+            </section>
+            <section class="poderes">
+                <h3 class="poderes__titulo">Magias Conhecidas</h3>
+                <textarea name="magiasconhecidas" class="poderes__campo" id="poderes__magias"></textarea>
+                <h3 class="poderes__titulo">Dinheiro e Itens</h3>
+                <textarea name="itens" class="poderes__campo" id="poderes__itens"></textarea>
+                <h3 class="poderes__titulo">História</h3>
+                <textarea name="historia" class="poderes__campo" id="poderes__historia"></textarea>
+            </section>
+            <section class="combate">
+                <h3 class="combate__titulo">Turno de Combate</h3>
+                <p><span>Passo 1 - Iniciativa:</span> cada combatente rola um dado e acrescenta ao resultado sua
+                    Habilidade. Inclua +1 por aceleração ou +2 por Teleporte (não cumulativos), quando houver.
+                    Combatentes com iniciativa mais alta agem primeiro.</p>
+                <p><span>Passo 2 - Força de Ataque (FA):</span> os personagens escolhem seus alvos e fazem seus
+                    ataques
+                    ou manobras, cada um em sua iniciativa. A Força de Ataque de cada um será igual a H + F + 1d
+                    (para
+                    ataques corpo-a-corpo) ou H + PdF + 1d (para ataques à longa distância), à escolha do jogador.
+                    Essa
+                    escolha deve ser feita antes da rolagem.</p>
+                <p><span>Passo 3 - Força de defesa (FD):</span> a Força de Defesa da vítima será igual a H + A + 1d.
+                    Subtraia esse valor da FA do atacante. O resultado final será a quantidade de Pontos de Vida
+                    perdidos pela vítima. Caso a FD final do alvo seja igual ou superior à FA final do atacante,
+                    nenhum
+                    dano é provocado.</p>
+            </section>
+        </form>
+    </div>
+</body>
+
+</html>

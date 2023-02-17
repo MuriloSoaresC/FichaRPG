@@ -1,0 +1,1 @@
+Ficha de RPG 3D&T feita com o intuito de ser usada nas minhas mesas com meus amigos, futuramemnte serão implantadas funcionalidades via Javascript.

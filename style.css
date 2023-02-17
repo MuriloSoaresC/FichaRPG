@@ -1,0 +1,170 @@
+body {
+    font-family: 'Aboreto', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(221, 217, 217);
+    background-image: url("img/fundofichagrande.png");
+    background-size: cover;
+    opacity: 0.9;
+}
+
+.center {
+    height: 1150px;
+    width: 900px;
+    border: 8px dashed;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.tituloficha {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    background-color: rgb(188, 188, 192);
+    border-radius: 5px;
+}
+
+.nomepontos {
+    display: flex;
+    justify-content: center;
+}
+
+#nome {
+    width: 700px;
+    font-size: 20px;
+}
+
+#pontos {
+    width: 50px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.nomepontos__label {
+    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 10px ;
+}
+
+form {
+    display: grid;
+    grid-template-areas: 
+    "caracteristicas poderes"
+    "caracteristicas combate";
+    grid-template-columns: 1fr 1fr;
+}
+
+.caracteristicas {
+    display: flex;
+    flex-direction: column;
+    grid-area: caracteristicas;
+}
+
+.caracteristicas__titulo {
+    font-size: 30px;
+    margin: 20px;
+}
+
+.caracteristicas__div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    background-color: rgb(188, 188, 192);
+    border-radius: 10px;
+}
+
+.caracteristicas__label {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.caracteristicas__input {
+    margin: 5px;
+    width: 30px;
+}
+
+#caracteristicas__pontosdevida {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    background-color: rgb(188, 188, 192);
+    border-radius: 10px;
+}
+
+#caracteristicas__pontosdemagia {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    background-color: rgb(188, 188, 192);
+    border-radius: 10px;
+}
+
+.poderes {
+    grid-area: poderes;
+    margin-left: 50px;
+}
+
+.poderes__titulo {
+    font-size: 30px;
+    margin: 20px;
+}
+
+.poderes__campo {
+    font-size: 20px;
+    width: 400px;
+}
+
+#poderes__magias {
+    height: 100px;
+}
+
+#poderes__itens {
+    height: 80px;
+}
+
+#poderes__historia {
+    height: 120px;
+}
+
+.vantagens-desvantagens {
+    grid-area: caracteristicas;
+    margin-top: 400px;
+}
+
+.vantagens-desvantagens__titulo {
+    font-size: 25px;
+    margin: 20px;
+}
+
+.vantagens-desvantagens__campo {
+    font-size: 20px;
+    width: 400px;
+    height: 120px;
+}
+
+#vantagens-desvantagens__dano{ 
+    height: 70px;
+}
+
+.combate {
+    grid-area: combate;
+    background-color: rgb(188, 188, 192);
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: none;
+}
+
+span {
+    font-weight: bold;
+}
+
