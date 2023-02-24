@@ -4,13 +4,13 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgb(221, 217, 217);
-    background-image: url("img/fundofichagrande.png");
+    background-image: url("../img/fundofichagrande.png");
     background-size: cover;
     opacity: 0.9;
 }
 
 .center {
-    height: 1150px;
+    height: 1205px;
     width: 900px;
     border: 8px dashed;
     padding-left: 50px;
@@ -166,5 +166,28 @@ textarea {
 
 span {
     font-weight: bold;
+}
+
+.botoes {
+   display: flex;
+   justify-content: center;
+   margin: 20px;
+   margin-top: 13px;
+}
+
+.botao {
+  width: 120px;
+  height: 35px;
+  margin: 15px;
+  margin-left: 3px;
+  margin-right: 3px;
+  font-size: 18px;
+  background-color: rgb(221, 221, 226);
+  border-radius: 3px;
+  border: solid 1px;  
+}
+
+.botao:hover {
+    background-color: rgb(146, 144, 144);
 }
 

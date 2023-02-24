@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/script.js" defer></script>
     <title>Ficha 3D&T</title>
 </head>
 
@@ -21,7 +22,7 @@
             <input type="number" id="pontos" min="0">
             <label class="nomepontos__label" for="pontos">Pontos</label>
         </section>
-        <form class="ficha">
+        <form id="ficha">
             <section class="caracteristicas">
                 <h3 class="caracteristicas__titulo">Características</h3>
                 <div class="caracteristicas__div">
@@ -65,9 +66,9 @@
             </section>
             <section class="vantagens-desvantagens">
                 <h3 class="vantagens-desvantagens__titulo">Vantagens</h3>
-                <textarea name="vantagens" class="vantagens-desvantagens__campo"></textarea>
+                <textarea name="vantagens" class="vantagens-desvantagens__campo" id="vantagens__campo"></textarea>
                 <h3 class="vantagens-desvantagens__titulo">Desvantagens</h3>
-                <textarea name="desvantagens" class="vantagens-desvantagens__campo"></textarea>
+                <textarea name="desvantagens" class="vantagens-desvantagens__campo" id="desvantagens__campo"></textarea>
                 <h3 class="vantagens-desvantagens__titulo">Tipos de Dano</h3>
                 <textarea name="tiposdedano" class="vantagens-desvantagens__campo"
                     id="vantagens-desvantagens__dano"></textarea>
@@ -99,7 +100,11 @@
                     dano é provocado.</p>
             </section>
         </form>
+        <div class="botoes">
+            <button type="button" class="botao" onclick="salvar()">Salvar</button>
+            <button type="button" class="botao" onclick="carregar()">Carregar</button>
+            <button type="button" class="botao" onclick="apagar()">Apagar</button>
+        </div>
     </div>
 </body>
-
 </html>
